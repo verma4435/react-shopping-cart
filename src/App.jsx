@@ -1,6 +1,6 @@
 import "./App.css";
-import MainNavigation from "./components/mainNavigation/MainNavigation";
-import Products from "./components/products/Products";
+import MainNavigation from "./components/MainNavigation/MainNavigation";
+import Products from "./components/Products/Products";
 function App() {
   return (
     <>

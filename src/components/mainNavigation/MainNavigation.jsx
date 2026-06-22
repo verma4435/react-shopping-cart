@@ -1,4 +1,4 @@
-import Cart from "../cart/Cart";
+import Cart from "../Cart/Cart";
 import "./MainNavigation.css";
 
 function MainNavigation() {
