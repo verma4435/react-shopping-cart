@@ -1,0 +1,16 @@
+ul {
+    color: blue;
+    list-style-type: none;
+    display: flex;
+    cursor: pointer;
+}
+
+ul li {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.cart {
+color: green;
+}
