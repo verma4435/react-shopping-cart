@@ -3,14 +3,14 @@ import { cartActions } from "../../store/cart.store";
 function Cart() {
   const dispatch = useDispatch();
 
-  const data = useSelector((state) => state.cart);
+  const { items: data } = useSelector((state) => state.cart);
 
   function addToCart() {
     dispatch(cartActions.addToCart(1));
   }
 
   return (
-    <span class="cart" onClick={addToCart}>
+    <span className="cart" onClick={addToCart}>
       Cart {data.length ? `(${data.length})` : undefined}
     </span>
   );
