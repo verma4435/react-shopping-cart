@@ -3,7 +3,7 @@ import "./MainNavigation.css";
 
 function MainNavigation() {
   return (
-    <ul>
+    <ul className="main-nav-container">
       <li>Products</li>
       <li className="cart">
         <Cart />

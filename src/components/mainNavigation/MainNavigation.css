@@ -1,16 +1,16 @@
-ul {
+.main-nav-container {
     color: blue;
     list-style-type: none;
     display: flex;
     cursor: pointer;
 }
 
-ul li {
+.main-nav-container li {
     flex: 1;
     padding: 10px;
     text-align: center;
 }
 
 .cart {
-color: green;
+    color: green;
 }

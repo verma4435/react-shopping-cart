@@ -1,29 +1,113 @@
 import ProductItem from "./ProductItem";
-
+import "./Products.css";
 const DUMMY_PRODUCTS = [
   {
     id: 1,
-    title: "Addidas",
+    title: "Product 1",
     image: "https://loremflickr.com/1281/720",
-    description: "addidas shoes",
+    description: "Product shoes",
   },
   {
     id: 2,
-    title: "Addidas",
+    title: "Product 2",
     image: "https://loremflickr.com/1282/720",
-    description: "addidas shoes",
+    description: "Product shoes",
   },
   {
     id: 3,
-    title: "Addidas",
+    title: "Product 3",
     image: "https://loremflickr.com/1283/720",
-    description: "addidas shoes",
+    description: "Product shoes",
   },
   {
     id: 4,
-    title: "Addidas",
+    title: "Product 4",
     image: "https://loremflickr.com/1284/720",
-    description: "addidas shoes",
+    description: "Product shoes",
+  },
+  {
+    id: 5,
+    title: "Product 5",
+    image: "https://loremflickr.com/1285/720",
+    description: "Product shoes",
+  },
+  {
+    id: 6,
+    title: "Product 6",
+    image: "https://loremflickr.com/1286/720",
+    description: "Product shoes",
+  },
+  {
+    id: 7,
+    title: "Product 7",
+    image: "https://loremflickr.com/1287/720",
+    description: "Product shoes",
+  },
+  {
+    id: 8,
+    title: "Product 8",
+    image: "https://loremflickr.com/1288/720",
+    description: "Product shoes",
+  },
+  {
+    id: 9,
+    title: "Product 9",
+    image: "https://loremflickr.com/1289/720",
+    description: "Product shoes",
+  },
+  {
+    id: 10,
+    title: "Product 10",
+    image: "https://loremflickr.com/1290/720",
+    description: "Product shoes",
+  },
+  {
+    id: 11,
+    title: "Product 11",
+    image: "https://loremflickr.com/1291/720",
+    description: "Product shoes",
+  },
+  {
+    id: 12,
+    title: "Product 12",
+    image: "https://loremflickr.com/1292/720",
+    description: "Product shoes",
+  },
+  {
+    id: 13,
+    title: "Product 13",
+    image: "https://loremflickr.com/1293/720",
+    description: "Product shoes",
+  },
+  {
+    id: 14,
+    title: "Product 14",
+    image: "https://loremflickr.com/1294/720",
+    description: "Product shoes",
+  },
+  {
+    id: 15,
+    title: "Product 15",
+    image: "https://loremflickr.com/1295/720",
+    description: "Product shoes",
+  },
+  {
+    id: 16,
+    title: "Product 16",
+    image: "https://loremflickr.com/1296/720",
+    description: "Product shoes",
+  },
+  {
+    id: 17,
+    title: "Product 17",
+    image: "https://loremflickr.com/1297/720",
+    description: "Product shoes",
+  },
+  {
+    id: 18,
+    title: "Product 18",
+    image: "https://loremflickr.com/1298/720",
+    description: "Product shoes",
   },
 ];
 function Products() {
@@ -33,9 +117,9 @@ function Products() {
   return (
     <>
       <h1>Products</h1>
-      <ul>
+      <ul className="product-container">
         {DUMMY_PRODUCTS.map((item) => (
-          <li key={item.id}>
+          <li className="product-item" key={item.id}>
             <ProductItem {...item} />
           </li>
         ))}
