@@ -1,15 +1,17 @@
-import { useState } from "react";
-
+import { useDispatch, useSelector } from "react-redux";
+import { cartActions } from "../../store/cart.store";
 function Cart() {
-  const [itemCounter, setItemCounter] = useState(0);
+  const dispatch = useDispatch();
+
+  const data = useSelector((state) => state.cart);
 
   function addToCart() {
-    setItemCounter((count) => count + 1);
+    dispatch(cartActions.addToCart(1));
   }
 
   return (
     <span class="cart" onClick={addToCart}>
-      Cart {itemCounter ? `(${itemCounter})` : undefined}
+      Cart {data.length ? `(${data.length})` : undefined}
     </span>
   );
 }
