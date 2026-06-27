@@ -4,6 +4,7 @@ const cartInitialState = {
   items: [],
   totalQuantity: 0,
   totalPrice: 0,
+  showModal: true,
 };
 const cartSlice = createSlice({
   name: "cart-slice",
@@ -13,6 +14,12 @@ const cartSlice = createSlice({
       state.items.push(action.payload);
       state.totalQuantity++;
       state.totalPrice += action.payload.price;
+    },
+    showModal(state) {
+      state.showModal = true;
+    },
+    hideModal(state) {
+      state.showModal = false;
     },
   },
 });

@@ -5,12 +5,12 @@ function Cart() {
 
   const { items: data } = useSelector((state) => state.cart);
 
-  function addToCart() {
-    dispatch(cartActions.addToCart(1));
+  function showModal() {
+    dispatch(cartActions.showModal());
   }
 
   return (
-    <span className="cart" onClick={addToCart}>
+    <span className="cart" onClick={showModal}>
       Cart {data.length ? `(${data.length})` : undefined}
     </span>
   );
